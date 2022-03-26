@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'android';
+    src: url('IDroid/IDroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    background-image: linear-gradient(to bottom,#26d876, #18a555, #0a6b31, #06411E) ;
+    background-attachment: scroll;
+    padding: 10px;
+    margin: -8px;
+}
+
+header > h1 {
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.727);
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    font-size: small;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.583);
+}
+
+nav > a {
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav {
+    padding: 0px;
+    margin: 0px;
+    font-size: smaller;
+}
+
+
+body {
+    background-color: #E4E1BE;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    background-color: white;
+    padding: 12px;
+    margin: 8px 80px;
+}
+
+section {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+section#historia > h1 {
+    font-family: 'android';
+    color: #246341;
+}
+
+section > p {
+    text-indent: 30px;
+}
+
+
+article > h2 {
+    font-family: 'android';
+    color: #246341;
+    padding: 7px;
+    margin: 10px;
+    box-shadow: inset 92px 3px 30px 7px #8ee1b3;
+    
+}
+
+article > p {
+    text-indent: 30px;
+}
+
+article > div {
+    text-align: center;
+}
+
+article > div#video {
+    border: 25px solid #064620;
+    padding: 0px;
+    margin: 0px;
+}
+
+section.info {
+    text-align: justify;
+    text-indent: 30px;
+    border: 5px solid #B9ECD0;
+    border-radius: 10px;
+    background-color: #B9ECD0;
+    padding: 10px;
+    margin: 0px;
+}
+
+section.info > h3 {
+    color: white;
+    border-radius: 10px;
+    background-color: #154D2C;
+    padding: 10px;
+    margin: -15px -15px 0px -15px;
+}
+
+footer {
+    text-align: center;
+    background-color: #064620;
+    color: white;
+    font-size: 6pt;
+    font-style: italic;
+    padding: 0.5px;
+    margin: 0px -12px 0px -12px;
+}
+
+section.info > article > a {
+    text-indent: 0px;
+    text-decoration: none;
+    color: black;
+}

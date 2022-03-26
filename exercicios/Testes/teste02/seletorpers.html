@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando Seletores Personalizados</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+        body {
+            background-color: beige;
+            color: rgba(145, 45, 9, 0.754);
+            font-family: Arial, Helvetica, sans-serif;
+        
+        }
+
+        h1 {
+            text-align: center;
+            color: rgba(109, 55, 5, 0.96);
+            background-color: rgba(136, 97, 97, 0.165);
+            width: auto;
+            height: auto;
+    
+        }
+
+        h1#mudar {
+            color: rgba(194, 5, 24, 0.74);
+            font: italic normal 3em 'Times New Roman', Times, serif;
+            
+        }
+
+        h2 {
+            color: rgba(145, 100, 45, 0.693);
+        }
+
+        h2.estiloso {
+            color: rgba(68, 5, 128, 0.5);
+            font-family: 'Red Hat Mono', monospace;
+            font-weight: 500;
+            text-decoration: underline;
+        }
+
+        .estiloso:hover {
+            color: black;
+        }
+
+        a.estiloso:active {
+            color: red;
+        }
+
+        .toto::before {
+            content: '> ';
+        }
+
+        .toto::after {
+            content: ' <';
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover {
+            color: red;
+        }
+
+        div:hover > p {
+            display: block;
+            color: blue;
+        }
+
+        h2.ultimo:hover {
+            color: rgba(14, 185, 14, 0.377);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Seletores Personalizados</h1>
+    <h2>id e class</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores odit nostrum minus cupiditate magnam atque omnis inventore harum dignissimos, consequuntur modi commodi itaque. Accusamus, praesentium magnam omnis labore placeat dignissimos!</p>
+    <h1 id="mudar">Título 2</h1>
+    <h2 class="estiloso">Subtítulo</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod reiciendis earum deleniti porro expedita ipsum, aperiam maxime enim optio atque quae debitis velit eos ea mollitia corrupti omnis error! <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external" class="estiloso">Delectus?</a></p>
+    <h2>Outro Subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque hic dicta aliquid magni odit sequi aspernatur totam itaque quas. <abbr title="clique aqui"><a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external" class="toto">Ex rem</a></abbr>, accusamus molestias nemo nostrum excepturi minus aut quaerat repudiandae?</p>
+    <div>
+        Passe o mouse aqui
+        <p>Texto oculto</p>
+        <p>Exemplo apenas</p>
+    </div>
+    <h2 class="ultimo">Último Subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quasi.</p>
+</body>
+</html>
